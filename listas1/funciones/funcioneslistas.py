@@ -21,7 +21,7 @@ def dividirtres(lista):
     id_paciente=lista[0:1]
     fase_ensayo=lista[1:2]
     serie_temperaturas=lista[2:]
-    print(id_paciente,fase_ensayo,serie_temperaturas)
+    print("nombre",id_paciente,"fase",fase_ensayo,"temperatura",serie_temperaturas)
     return id_paciente,fase_ensayo,serie_temperaturas
 'Funcion que convierte las temperaturas en flotantes'
 def convertirfloat(lista):
@@ -29,10 +29,13 @@ def convertirfloat(lista):
     return serie_temperaturas
 'Funcion que aporta una temperatura mas'
 def anadetemp(lista):
-    temp=float(input("introduzca otra temperatura"))
-    lista.append(temp)
-    for elemento in lista:
-        print(elemento)
+    try:
+        temp=int(input("introduzca otra temperatura"))
+        lista.append(temp)
+    except:
+        print("Vuelva a introducir temperatura")
+        temp=float(input("Introduzca temperatura"))
+        lista.append(temp)
 if __name__=="__main__":
     lista=[]
     crearlista(lista)
@@ -40,6 +43,7 @@ if __name__=="__main__":
     dividirtres(lista)
     convertirfloat(lista)
     anadetemp(lista)
+    recorrerlista(lista)
 
     
  
