@@ -16,19 +16,32 @@ def crearlista(lista):
 def recorrerlista(lista): 
     for elemento in lista:
         print(elemento)
-if __name__=="__main__":
-    lista=[]
-    crearlista(lista)
-    recorrerlista(lista)
 "Funcion que separa la lista en tres variables:id_paciente,fase_ensayo,serie_temperaturas"
 def dividirtres(lista):
     id_paciente=lista[0:1]
     fase_ensayo=lista[1:2]
     serie_temperaturas=lista[2:]
+    print(id_paciente,fase_ensayo,serie_temperaturas)
     return id_paciente,fase_ensayo,serie_temperaturas
+'Funcion que convierte las temperaturas en flotantes'
 def convertirfloat(lista):
     serie_temperaturas=float
     return serie_temperaturas
+'Funcion que aporta una temperatura mas'
+def anadetemp(lista):
+    temp=float(input("introduzca otra temperatura"))
+    lista.append(temp)
+    for elemento in lista:
+        print(elemento)
+if __name__=="__main__":
+    lista=[]
+    crearlista(lista)
+    recorrerlista(lista)
+    dividirtres(lista)
+    convertirfloat(lista)
+    anadetemp(lista)
+
+    
  
     
     
