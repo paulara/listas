@@ -36,6 +36,27 @@ def anadetemp(lista):
         print("Vuelva a introducir temperatura")
         temp=float(input("Introduzca temperatura"))
         lista.append(temp)
+"funcion que anade dos temp"
+def dostemp(lista):
+    try:
+        temp1=int(input("introduzca temp1"))
+        temp2=int(input("introduzca temp2"))
+    except:
+        temp1=float(input("introduzca temp1"))
+        temp2=float(input("introduzca temp2"))
+    lista.append(temp1)
+    lista.append(temp2)
+"calcula numero de temp"
+def numtemp(lista):
+    print("El numero de temperaturas es",len(lista[2:]))
+"no funciona"
+def comas(lista):
+        coma=(input("introduzca una coma"))
+        lista.append(coma)
+        cadena=lista[4:]
+        print(cadena)
+"funcion que ordena de mayor a menor"
+def mayormenor(lista):
 if __name__=="__main__":
     lista=[]
     crearlista(lista)
@@ -44,6 +65,10 @@ if __name__=="__main__":
     convertirfloat(lista)
     anadetemp(lista)
     recorrerlista(lista)
+    dostemp(lista)
+    recorrerlista(lista)
+    numtemp(lista)
+    comas(lista)
 
     
  
