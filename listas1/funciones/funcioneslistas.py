@@ -24,9 +24,9 @@ def dividirtres(lista):
     print("nombre",id_paciente,"fase",fase_ensayo,"temperatura",serie_temperaturas)
     return id_paciente,fase_ensayo,serie_temperaturas
 'Funcion que convierte las temperaturas en flotantes'
-def convertirfloat(lista):
-    serie_temperaturas=float
-    return serie_temperaturas
+def convertirfloat(serie_temperaturas):
+    for elemento in len(serie_temperaturas):
+        serie_temperaturas[elemento]=float(serie_temperaturas[elemento])
 'Funcion que aporta una temperatura mas'
 def anadetemp(lista):
     try:
@@ -56,13 +56,15 @@ def comas(lista):
         cadena=lista[4:]
         print(cadena)
 "funcion que ordena de mayor a menor"
-def mayormenor(lista):
 if __name__=="__main__":
     lista=[]
     crearlista(lista)
     recorrerlista(lista)
     dividirtres(lista)
-    convertirfloat(lista)
+    id_paciente=[]
+    fase_ensayo=[]
+    serie_temperaturas=[]
+    convertirfloat(serie_temperaturas)
     anadetemp(lista)
     recorrerlista(lista)
     dostemp(lista)
