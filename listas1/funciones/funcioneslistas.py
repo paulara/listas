@@ -25,7 +25,7 @@ def dividirtres(lista):
     return id_paciente,fase_ensayo,serie_temperaturas
 'Funcion que convierte las temperaturas en flotantes'
 def convertirfloat(serie_temperaturas):
-    for elemento in len(serie_temperaturas):
+    for elemento in range(len(serie_temperaturas)):
         serie_temperaturas[elemento]=float(serie_temperaturas[elemento])
 'Funcion que aporta una temperatura mas'
 def anadetemp(lista):

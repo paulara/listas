@@ -10,7 +10,10 @@ lista=[]
 crearlista(lista)
 recorrerlista(lista)
 dividirtres(lista)
-convertirfloat(lista)
+id_paciente=[]
+fase_ensayo=[]
+serie_temperaturas=[]
+convertirfloat(serie_temperaturas)
 anadetemp(lista)
 recorrerlista(lista)
 dostemp(lista)
