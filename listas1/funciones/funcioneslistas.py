@@ -27,7 +27,7 @@ def dividirtres(lista):
 def convertirfloat(serie_temperaturas):
     for elemento in range(len(serie_temperaturas)):
         serie_temperaturas[elemento]=float(serie_temperaturas[elemento])
-'Funcion que aporta una temperatura mas'
+'Funcion que incorpora una temperatura mas'
 def anadetemp(lista):
     try:
         temp=int(input("introduzca otra temperatura"))
@@ -49,28 +49,23 @@ def dostemp(lista):
 "calcula numero de temp"
 def numtemp(lista):
     print("El numero de temperaturas es",len(lista[2:]))
-"no funciona"
-def comas(lista):
-        coma=(input("introduzca una coma"))
-        lista.append(coma)
-        cadena=lista[4:]
-        print(cadena)
+"cadena de texto con comas"
+def comas(serie_temperaturas):
+    print(serie_temperaturas)       
 "funcion que ordena de mayor a menor"
 if __name__=="__main__":
     lista=[]
     crearlista(lista)
     recorrerlista(lista)
-    dividirtres(lista)
-    id_paciente=[]
-    fase_ensayo=[]
-    serie_temperaturas=[]
+    id_paciente,fase_ensayo,serie_temperaturas=dividirtres(lista)
     convertirfloat(serie_temperaturas)
     anadetemp(lista)
     recorrerlista(lista)
     dostemp(lista)
     recorrerlista(lista)
+    id_paciente,fase_ensayo,serie_temperaturas=dividirtres(lista)
     numtemp(lista)
-    comas(lista)
+    comas(serie_temperaturas)
 
     
  

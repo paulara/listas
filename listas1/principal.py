@@ -6,16 +6,16 @@ from funciones.funcioneslistas import convertirfloat
 from funciones.funcioneslistas import anadetemp
 from funciones.funcioneslistas import dostemp
 from funciones.funcioneslistas import numtemp
+from funciones.funcioneslistas import comas
 lista=[]
 crearlista(lista)
 recorrerlista(lista)
-dividirtres(lista)
-id_paciente=[]
-fase_ensayo=[]
-serie_temperaturas=[]
+id_paciente,fase_ensayo,serie_temperaturas=dividirtres(lista)
 convertirfloat(serie_temperaturas)
 anadetemp(lista)
 recorrerlista(lista)
 dostemp(lista)
 recorrerlista(lista)
+id_paciente,fase_ensayo,serie_temperaturas=dividirtres(lista)
 numtemp(lista)
+comas(serie_temperaturas)
