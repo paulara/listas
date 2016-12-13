@@ -51,8 +51,10 @@ def numtemp(lista):
     print("El numero de temperaturas es",len(lista[2:]))
 "cadena de texto con comas"
 def comas(serie_temperaturas):
+    for elemento in range(len(serie_temperaturas)):
+        serie_temperaturas[elemento]=str(serie_temperaturas[elemento])
     print(serie_temperaturas)       
-"funcion que ordena de mayor a menor"
+"funcion que ordena de mayor a menor"   
 if __name__=="__main__":
     lista=[]
     crearlista(lista)
