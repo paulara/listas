@@ -1,4 +1,5 @@
 "Funcion que hace la lista"
+from builtins import int
 def crearlista(lista):
     x=int(input("Si desea introducir un valor pulse 1."))
     while x==1:
@@ -54,7 +55,16 @@ def comas(serie_temperaturas):
     for elemento in range(len(serie_temperaturas)):
         serie_temperaturas[elemento]=str(serie_temperaturas[elemento])
     print(serie_temperaturas)       
-"funcion que ordena de mayor a menor"   
+"funcion que ordena de mayor a menor"  
+"funcion que hace la media de las temperaturas" 
+def media(serie_temperaturas):
+    x=0
+    y=0
+    for elemento in serie_temperaturas:
+        x==(elemento+x)
+        y==(y+1)
+    media=x/y
+    print(media)
 if __name__=="__main__":
     lista=[]
     crearlista(lista)
@@ -68,6 +78,8 @@ if __name__=="__main__":
     id_paciente,fase_ensayo,serie_temperaturas=dividirtres(lista)
     numtemp(lista)
     comas(serie_temperaturas)
+    convertirfloat(serie_temperaturas)
+    media(serie_temperaturas)
 
     
  
