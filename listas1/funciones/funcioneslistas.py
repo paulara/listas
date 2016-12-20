@@ -56,12 +56,18 @@ def comas(serie_temperaturas):
         serie_temperaturas[elemento]=str(serie_temperaturas[elemento])
     print(serie_temperaturas)       
 "funcion que ordena de mayor a menor"  
+def ordena(serie_temperaturas):
+    for indice1 in range(len(serie_temperaturas)):
+        for indice2 in range(indice1+1,len(serie_temperaturas)):
+            if serie_temperaturas[indice1]>serie_temperaturas[indice2]:
+                serie_temperaturas[indice1],serie_temperaturas[indice2]=serie_temperaturas[indice2],serie_temperaturas[indice1]
+    print(serie_temperaturas)
 "funcion que hace la media de las temperaturas" 
 def media(serie_temperaturas):
     x=0
     y=0
     for elemento in serie_temperaturas:
-        x==(elemento+x)
+        x==(serie_temperaturas[elemento]+x)
         y==(y+1)
     media=x/y
     print(media)
@@ -79,6 +85,7 @@ if __name__=="__main__":
     numtemp(lista)
     comas(serie_temperaturas)
     convertirfloat(serie_temperaturas)
+    ordena(serie_temperaturas)
     media(serie_temperaturas)
 
     

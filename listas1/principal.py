@@ -7,6 +7,8 @@ from funciones.funcioneslistas import anadetemp
 from funciones.funcioneslistas import dostemp
 from funciones.funcioneslistas import numtemp
 from funciones.funcioneslistas import comas
+from funciones.funcioneslistas import ordena
+from funciones.funcioneslistas import media
 lista=[]
 crearlista(lista)
 recorrerlista(lista)
@@ -19,3 +21,6 @@ recorrerlista(lista)
 id_paciente,fase_ensayo,serie_temperaturas=dividirtres(lista)
 numtemp(lista)
 comas(serie_temperaturas)
+convertirfloat(serie_temperaturas)
+ordena(serie_temperaturas)
+#1media(serie_temperaturas)
