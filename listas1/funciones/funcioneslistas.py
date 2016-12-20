@@ -65,12 +65,10 @@ def ordena(serie_temperaturas):
 "funcion que hace la media de las temperaturas" 
 def media(serie_temperaturas):
     x=0
-    y=0
-    for elemento in serie_temperaturas:
-        x==(serie_temperaturas[elemento]+x)
-        y==(y+1)
-    media=x/y
-    print(media)
+    for elemento in range(len(serie_temperaturas)):
+        x=serie_temperaturas[elemento]+x
+    media=x/len(serie_temperaturas)
+    print("La media es:",media)
 if __name__=="__main__":
     lista=[]
     crearlista(lista)
