@@ -69,6 +69,12 @@ def media(serie_temperaturas):
         x=serie_temperaturas[elemento]+x
     media=x/len(serie_temperaturas)
     print("La media es:",media)
+"Funcion que imprime la maxima y minima temperatura"
+def maxmin(serie_temperaturas):
+    min=serie_temperaturas[0]
+    max=serie_temperaturas[-1]
+    print("maxima:",max,"minima:",min)
+    
 if __name__=="__main__":
     lista=[]
     crearlista(lista)
@@ -85,6 +91,7 @@ if __name__=="__main__":
     convertirfloat(serie_temperaturas)
     ordena(serie_temperaturas)
     media(serie_temperaturas)
+    maxmin(serie_temperaturas)
 
     
  
